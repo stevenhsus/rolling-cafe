@@ -1,0 +1,15 @@
+{
+  "short_name": "Rolling Cafe 開機咖啡",
+  "name": "Rolling Cafe 開機咖啡",
+  "icons": [
+    {
+      "src": "img/cup-of-hot-chocolate.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "index.html",
+  "background_color": "#AAAAAA",
+  "display": "standalone",
+  "theme_color": "#3367D6"
+}

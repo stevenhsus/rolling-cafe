@@ -1,0 +1,273 @@
+<!DOCTYPE HTML>
+<html lang="zh-tw">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+		<meta name="author" content="網頁作者">
+		<meta name="keywords" content="咖啡, Rolling, 賣咖啡, 買咖啡, 西門町, 武昌街, 台北市">
+		<meta name="description" content="開機咖啡銷售網站">
+		<title>Rolling Cafe 開機咖啡</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/coffee.css">
+		<link rel="stylesheet" href="css/fontawesome-all.min.css">
+		<link rel="shortcut icon" href="img/favicon.ico"/>
+		<link rel="bookmark" href="img/favicon.ico"/>
+		<link rel="manifest" href="manifest.json">
+	</head>
+	<body>		
+		<nav class="navbar navbar-expand-lg navbar-dark bg-danger shadow border-bottom border-warning fixed-top" style="border-width:5px !important">
+			<div class="container">
+				<a class="navbar-brand" href="index.html">
+					<img src="img/cup-of-hot-chocolate.png" width="30" height="30" class="d-inline-block align-top" alt="">
+					Rolling Cafe
+				</a> 
+				<button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarSupportedContent" data-toggle="collapse" type="button">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item active">
+							<a class="nav-link" href="index.html"><i class="fas fa-home"></i> 首頁</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="intro.html"><i class="fas fa-tree"></i> 環境介紹</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="shop.html"><i class="fas fa-coffee"></i> 商品介紹</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<div class="bg-white" id="loading" style="width: 100vw; height: 100vh; position: fixed; z-index:1029; display: table" >
+			<div class="d-table-cell d-table align-middle text-center">
+					<svg class="lds-comets" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid"><g transform="scale(-1,1) translate(-100,0)"><g transform="rotate(340.979 50 50)">
+							<animateTransform attributeName="transform" type="rotate" repeatCount="indefinite" values="360 50 50;240 50 50;120 50 50;0 50 50" keyTimes="0;0.333;0.667;1" dur="1s" keySplines="0.7 0 0.3 1;0.7 0 0.3 1;0.7 0 0.3 1" calcMode="spline"></animateTransform>
+							<path fill="#8cd0e5" d="M91,74.1C75.6,98,40.7,102.4,21.2,81c11,9.9,26.8,13.5,40.8,8.7c7.4-2.5,13.9-7.2,18.7-13.3 c1.8-2.3,3.5-7.6,6.7-8C90.5,67.9,92.7,71.5,91,74.1z"></path>
+							<path fill="#376888" d="M50.7,5c-4,0.2-4.9,5.9-1.1,7.3c1.8,0.6,4.1,0.1,5.9,0.3c2.1,0.1,4.3,0.5,6.4,0.9c5.8,1.4,11.3,4,16,7.8 C89.8,31.1,95.2,47,92,62c4.2-13.1,1.6-27.5-6.4-38.7c-3.4-4.7-7.8-8.7-12.7-11.7C66.6,7.8,58.2,4.6,50.7,5z"></path>
+							<path fill="#826b88" d="M30.9,13.4C12,22.7,2.1,44.2,7.6,64.8c0.8,3.2,3.8,14.9,9.3,10.5c2.4-2,1.1-4.4-0.2-6.6 c-1.7-3-3.1-6.2-4-9.5C10.6,51,11.1,41.9,14.4,34c4.7-11.5,14.1-19.7,25.8-23.8C37,11,33.9,11.9,30.9,13.4z"></path></g></g></svg>
+			</div>
+		</div>
+
+		<div class="container-fluid bg-light shadow">
+				<!-- <div class="container-fluid bg-dark shadow-lg"> -->
+			<div class="container" style="padding:81px 0 20px 0">
+				<div class="carousel slide carousel-fade" data-ride="carousel" id="carouselExampleIndicators">
+					<ol class="carousel-indicators">
+						<li class="active" data-slide-to="0" data-target="#carouselExampleIndicators"></li>
+						<li data-slide-to="1" data-target="#carouselExampleIndicators"></li>
+						<li data-slide-to="2" data-target="#carouselExampleIndicators"></li>
+					</ol>
+					<div class="carousel-inner rounded">
+						<div class="carousel-item active">
+							<img alt="First slide" class="d-block w-100" src="img/slid1.jpg">
+							<div class="carousel-caption d-none d-md-block">
+								<h5>Rolling Cafe</h5>
+								<p>  開機咖啡  </p>
+							</div>
+						</div>
+						<div class="carousel-item">
+							<img alt="Second slide" class="d-block w-100" src="img/slid2.jpg">
+							<div class="carousel-caption d-none d-md-block text-dark">
+								<h5>工業風的沈穩裝潢</h5>
+								<p>隨處可見的電影元素</p>
+							</div>
+						</div>
+						<div class="carousel-item">
+							<img alt="Third slide" class="d-block w-100" src="img/slid3.jpg">
+							<div class="carousel-caption d-none d-md-block">
+								<h5>白天的靜謐與入夜的微醺</h5>
+								<p>不同風格卻同樣迷人</p>
+							</div>
+						</div>
+					</div>
+					<a class="carousel-control-prev" data-slide="prev" href="#carouselExampleIndicators" role="button">
+						<span aria-hidden="true" class="carousel-control-prev-icon"></span> <span class="sr-only">Previous</span>
+					</a> 
+					<a class="carousel-control-next" data-slide="next" href="#carouselExampleIndicators" role="button">
+						<span aria-hidden="true" class="carousel-control-next-icon"></span> 
+						<span class="sr-only">Next</span>
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="container-fluid ">
+				<div class="container" >
+					<div class="row" style="padding:20px 0 20px 0">	
+							<div class="col-12 col-lg-5 picimg">
+									<h1>咖啡・音樂・再來份漢堡！——質感文青的電影餐酒館｜開機咖啡Rolling Cafe</h1>
+							</div>
+					
+						<div class="col-12 col-lg-7 pictext">
+							<div class="d-table h-100">
+								<div class="d-table-cell align-middle py-2">
+									<p>
+									從西門町轉進武昌街，深具風格的小店林立，充滿電影元素的開機咖啡Rolling Cafe正是其中一間，由身為電影人的老闆悉心打造。開幕四年來已小有名氣，既是咖啡廳，也是餐酒館，舒適空間加上沈穩的工業風裝潢、偌大的玻璃窗搭配早午餐與咖啡香，早讓許多人慕名而來。
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+					
+		</div>
+
+		<!-- 商品圖片 -->
+		<div class="container-fluid bg-secondary">
+			<div class="container" >
+				<div class="row" style="padding:20px 0 20px 0">	
+					<div class="col-12 col-lg-5 picimg">
+						<img src="img/lbager.jpeg" class="w-100 rounded">
+					</div>
+					<div class="col-12 col-lg-7 pictext">
+						<div class="d-table h-100">
+							<div class="d-table-cell align-middle text-white py-2">
+								<h3>【花生醬手打牛肉堡】</h3>
+								<p>
+									一直都是傳統美式餐廳的必備款，在開機咖啡的人氣也是居高不下。店內特製的花生醬甜而不膩，帶有烘烤過後花生的香味，搭配以新鮮牛肉手打製作的漢堡肉排，以及爽脆生菜與洋蔥，調和出絕妙的口感。
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row" style="padding:20px 0 20px 0">	
+					<div class="col-12 col-lg-7 pictext">
+						<div class="d-table h-100">
+							<div class="d-table-cell align-middle text-white py-2">
+								<h3>【Rolling牛肉三明治】</h3>
+								<p>
+									份量充足的餐點是許多人選擇美式餐廳的原因之一，【Rolling牛肉三明治】從視覺上就是巨無霸的等級！柔軟吐司包覆以胡椒香料烘烤調味後的牛排，撒上起司、甜椒、生洋蔥與鮮脆蔬菜。大口咬下，肉汁與濃厚牽絲起司讓人大飽口福。
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-lg-5 picimg">
+						<img src="img/lsandwitch.jpg" class="w-100 rounded">
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container-fluid bg-secondary">
+			<div class="container" >
+				<div class="row" style="padding:20px 0 20px 0">	
+					<div class="col-12 col-lg-5 picimg">
+						<img src="img/item1.jpeg" class="w-100 rounded">
+					</div>
+					<div class="col-12 col-lg-7 pictext">
+						<div class="d-table h-100">
+							<div class="d-table-cell align-middle text-white py-2">
+								<h3>【手打牛肉漢堡早午餐】</h3>
+								<p>
+									開機咖啡的【手打牛肉漢堡早午餐】已是讓附近旅行背包客，成了天天來報到的餐點。份量十足，內容豐富，牛肉漢堡搭配起司這種根本犯規的組合，光是香氣就已經讓人等不及品嚐；另佐以法式吐司搭配蜂蜜、現炸馬鈴薯外皮酥脆，恰到好處令人驚艷。新鮮荷包蛋及當季新鮮蔬果清爽解膩，元氣十足的一餐就從早午餐開始！
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row" style="padding:20px 0 20px 0">	
+					<div class="col-12 col-lg-7 pictext">
+						<div class="d-table h-100">
+							<div class="d-table-cell align-middle text-white py-2">
+								<h3>萬聖節特餐：包括魔鬼墨魚麵、丹麥海陸堡以及經典南瓜湯</h3>
+								<p>
+									無論你是喜愛Christopher Nolan的執導風格、為Heathcliff Ledger演技折服的電影文青，還是喜愛《黑暗騎士》的超級英雄迷，或只是看完電影後想來場味覺饗宴，都能一起共襄盛舉！
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-lg-5 picimg">
+						<img src="img/item2.jpeg" class="w-100 rounded">
+					</div>
+				</div>
+			</div>
+		</div>		
+
+		<div class="container-fluid bg-secondary">
+			<div class="container" >
+				<div class="row" style="padding:20px 0 20px 0">	
+					<div class="col-12 col-lg-5 picimg">
+						<img src="img/item3.jpeg" class="w-100 rounded">
+					</div>
+					<div class="col-12 col-lg-7 pictext">
+						<div class="d-table h-100">
+							<div class="d-table-cell align-middle text-white py-2">
+								<h3>【魔鬼墨魚麵】</h3>
+								<p>
+									由新鮮墨魚熬煮的鮮美醬汁，鋪淋在現炒墨魚及麵條上，墨汁滿溢、鮮味十足！【魔鬼墨魚麵】是店內銷售經典，在今年萬聖節又不惜成本重新推出。
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row" style="padding:20px 0 20px 0">	
+						<div class="col-12 col-lg-7 pictext">
+							<div class="d-table h-100">
+								<div class="d-table-cell align-middle text-white py-2">
+									<h3>【丹麥海陸堡】</h3>
+									<p>
+									【丹麥海陸堡】將特製竹炭千層麵包做成正方棺材形狀，每日新鮮現打牛肉做為漢堡基底，酥炸鱈魚的香酥鮮美帶出豐富口感，<br>再淋上特製的墨魚起司醬，讓整份餐點充滿奢華的層次。而【經典南瓜湯】則是以慢火細燉，整顆的南瓜僅能製成5人份，真材實料可想而知！
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-lg-5 picimg">
+							<img src="img/item2.jpeg" class="w-100 rounded">
+						</div>
+				</div>
+			</div>
+		</div>		
+
+		<div class="container-fluid text-center">
+		<p> 
+			<br>
+		若你厭倦了西門町擁擠的人潮，想要在老城區享受美食、電影、音樂，不妨來到開機咖啡Rolling Cafe，讓自己「重開機」一下吧！
+			<br>
+		</p>
+		</div>
+		<!-- 頁尾 -->
+		<div class="container-fluid bg-warning" style="padding:20px 0 20px 0;">
+			<div class="container text-center text-white">
+				<ul class="nav justify-content-center">
+					<li class="nav-item">
+						<a class="nav-link text-white" href="https://www.facebook.com/rollingtaipei/" target="_blank">
+							<i class="fab fa-facebook-f"></i>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link text-white" href="https://twitter.com/?lang=zh-tw" target="_blank">
+							<i class="fab fa-twitter"></i>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link text-white" href="https://www.youtube.com/watch?v=1YBLeJSKYfU" target="_blank">
+							<i class="fab fa-youtube"></i>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link text-white" href="" target="_blank">
+							<i class="fab fa-line"></i>
+						</a>
+					</li>
+				</ul>
+                &copy;
+				<script>
+					document.write( new Date().getFullYear() )
+				</script>
+				Rolling Cafe開機咖啡        108台北市萬華區武昌街二段38號         電話:02 - 2381 0826
+			</div>
+		</div>
+
+		<script src="js/jquery-3.3.1.min.js"></script>
+		<script src="js/popper.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script>
+			// 當網頁載入特效
+			$(window).on("load", function(){
+				setTimeout('$("#loading").fadeOut()',800);
+			})
+		</script>
+	</body>
+</html>
